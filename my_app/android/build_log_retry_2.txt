@@ -1,0 +1,44 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/Welcome/.gradle/wrapper/dists/gradle-8.14-all/c2qonpi39x1mddn7hk5gh9iqj/gradle-8.14/lib/native-platform-0.22-milestone-28.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy NO-SOURCE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+> Task :app:DebugMinSdkCheck
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:compileFlutterBuildDebug UP-TO-DATE
+> Task :app:packJniLibsflutterBuildDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:cleanMergeDebugAssets FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:cleanMergeDebugAssets'.
+> java.io.IOException: Unable to delete directory 'C:\Users\Welcome\OneDrive\Desktop\Oren Wears\my_app\build\app\intermediates\assets\debug\mergeDebugAssets'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - C:\Users\Welcome\OneDrive\Desktop\Oren Wears\my_app\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\fonts
+    - C:\Users\Welcome\OneDrive\Desktop\Oren Wears\my_app\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\packages\cupertino_icons\assets
+    - C:\Users\Welcome\OneDrive\Desktop\Oren Wears\my_app\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\packages\cupertino_icons
+    - C:\Users\Welcome\OneDrive\Desktop\Oren Wears\my_app\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\packages
+    - C:\Users\Welcome\OneDrive\Desktop\Oren Wears\my_app\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\shaders
+    - C:\Users\Welcome\OneDrive\Desktop\Oren Wears\my_app\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s
+9 actionable tasks: 2 executed, 7 up-to-date
